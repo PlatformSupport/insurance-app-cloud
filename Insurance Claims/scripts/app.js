@@ -5,7 +5,7 @@
 			apiKey: app.config.everlive.apiKey,
 			scheme: app.config.everlive.scheme,
 			authentication: {
-				persist: true,
+				persist: false, // do not save an access token locally
 				onAuthenticationRequired: function () {
 					app.navigate('scripts/modules/login/signin.html');
 				}
