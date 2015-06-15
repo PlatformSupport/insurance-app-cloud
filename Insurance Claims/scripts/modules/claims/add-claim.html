@@ -1,0 +1,67 @@
+<div id="add-bill-view"
+     class="view add-bill-view"
+	 data-role="view"
+ 	data-stretch="true"
+	 data-layout="drawer-layout"
+     data-transition="overlay:left"
+     data-init="app.addclaimService.initModule"
+	 data-show="app.addclaimService.showModule"
+     data-after-show="app.addclaimService.adjustDimensions"
+	 data-model="app.addclaimService.viewModel"
+	 data-title="Add Claim">
+
+	<div data-role="header">
+        <div data-role="navbar">
+            <div data-role="view-title" class="ds-aligned"></div>
+            <a class="ds-header-button ds-header-back" data-align="left" data-role="backbutton"></a>
+		</div>
+	</div>
+    
+    <form class="ds-form ds-add-items">
+		<div class="ds-top-container">
+			<a class="ds-button ds-button-add" data-icon="camera" data-role="button" data-bind="click: onAddPhotoClick">Add photo</a>
+        	<img class="ds-button-add" data-bind="visible: Attachments, attr: { src: PhotoUrl }"/> 
+		</div>
+		<div class="ds-detail-container" data-role="scroller" data-use-native-scrolling="true">
+			<div class="ds-item-wrp">
+	            <div class="ds-title">Title</div>
+	            <div class="ds-value">
+	                <input class="ds-input" type="text" data-bind="value: Title" />
+	            </div>
+	        </div>
+            
+			<div class="ds-item-wrp">
+	            <div class="ds-title">Policy#</div>
+	            <div class="ds-value">
+	                <input class="ds-input" type="text" data-bind="value: Policy" />
+	            </div>
+	        </div>
+	        
+	        <div class="ds-item-wrp">
+	            <div class="ds-title">Description</div>
+	            <div class="ds-value">
+	                <textarea class="ds-input" type="text" data-bind="value: Description"></textarea>
+	            </div>
+	        </div>
+	        
+	        <div class="ds-item-wrp">
+	            <div class="ds-title">Location</div>
+	            <div class="ds-value">
+	                <input class="ds-input" type="text" data-bind="value: Location" />
+	            </div>
+	        </div>
+
+
+	        <div class="ds-item-wrp">
+	            <div class="ds-title">Amount</div>
+	            <div class="ds-value">
+	                <input class="ds-input" type="text" data-bind="value: Amount" />
+	            </div>
+	        </div>
+			<div class="ds-item-wrp ds-btn">
+            	<a class="ds-button ds-button-large" data-role="button" data-bind="click: onAdd" data-icon="edit">Register</a>
+			</div>
+		</div>
+    </form>
+    
+</div>

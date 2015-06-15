@@ -1,0 +1,25 @@
+<div id="claims-view" class="view claims-view" data-role="view" data-show="app.claimsService.showModule" data-model="app.claimsService.viewModel" data-layout="drawer-layout" data-transition="overlay:left" data-title="Claims">
+	<div data-role="header">
+		<div data-role="navbar">
+			<div data-role="view-title"></div>
+			<a class="ds-header-button ds-header-add" data-align="right" data-role="button" data-icon="add" href="scripts/modules/claims/add-claim.html">Add Claim</a>
+		</div>
+	</div>
+	<div data-role="tabstrip">
+		<a href="scripts/modules/claims/claims.html?status=Registered">Registered</a>
+		<a href="scripts/modules/claims/claims.html?status=Submitted">Submitted</a>
+		<a href="scripts/modules/claims/claims.html?status=Approved">Approved</a>
+		<a href="scripts/modules/claims/claims.html?status=Declined">Declined</a>
+	</div>
+	<ul class="claims-items" data-role="listview" data-bind="source: claimsDataSource" data-template="claims-template">
+	</ul>
+	<script id="claims-template" type="text/x-kendo-tmpl">
+		<a class="cf" href="scripts/modules/claims/claim-details.html?dataId=#: data.uid #">
+			<span class="ds-item-thumb"></span>
+			<span class="ds-item-content-wrp">
+                <span class="ds-title">#: data.Title #</span>
+			<span class="ds-value">#: data.Amount #</span>
+			</span>
+		</a>
+	</script>
+</div>

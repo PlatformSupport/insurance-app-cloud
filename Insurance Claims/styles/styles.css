@@ -1,0 +1,634 @@
+/* Work around an issue in Kendo UI Mobile */
+body {
+    height: 100% !important;
+}
+
+/* Icons */
+.ds-icon:before {
+    position: absolute;
+    top: 50%;
+    left: .35em;
+    display: block;
+    margin-top: -.52em;
+    width: 1em;
+    height: 1em;
+    content: "";
+    font: 2em FontAwesome;
+    opacity: .8;
+}
+
+.ar .ds-icon:before {
+    right: .35em;
+    left: auto; 
+}
+
+.ds-icon.ds-username:before {
+    content: "\f007";
+}
+
+.ds-icon.ds-password:before {
+    content: "\f023";
+}
+
+.ds-icon.ds-email:before {
+    content: "\f003";
+}
+
+.km-ios7 .km-add:after,
+.km-ios7 .km-state-active .km-add:after
+{
+	content: "\e0cb";
+}
+
+.km-approve:after {
+	content: "\e037";
+}
+
+.km-decline:after {
+	content: "\e038";
+}
+
+/* form styles */
+.signin-view .ds-form {
+    margin: 1em 1.2em;
+    text-align: center;
+}
+
+.km-ios7 .km-view input.ds-input {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: .3em;
+    padding: .5em .8em;
+    width: 100%; 
+    border: 2px solid transparent;
+    background-color: #153E6A;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    font: 1.35em "HelveticaNeue Ultra Light", "Roboto Light", "Slate Light", "Segoe WP", NokiaPureTextLight, sans-serif;
+    -webkit-appearance: none;
+}
+
+.km-ios7 .km-view.ar .km-content input.ds-input {
+    text-align: right;
+}
+
+.ds-input,
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+.ds-input-wrp {
+	color: #fff;
+    position: relative;
+    display: block;
+}
+
+.km-ios7 .km-view .km-content .ds-icon input.ds-input {
+    padding-left: 2.5em;
+}
+
+.km-ios7 .km-view.ar .km-content .ds-icon input.ds-input {
+    padding-right: 2.5em;
+    padding-left: .8em;
+}
+
+.km-ios7 .km-view .km-button.ds-button,
+.km-ios7 .km-view .km-content input.ds-input {
+    border-radius: 2px;
+    background-image: none;
+}
+
+.km-ios7 .km-view .km-button.ds-button,
+.km-ios7 .km-view input.km-button.ds-button {
+    overflow: hidden;
+    padding: .2em .4em;
+    border: 0;
+    background-color: #F58220;
+	border: 1px solid transparent;
+    color: #fff;
+    text-decoration: none;
+    font: 2em normal "HelveticaNeue Ultra Light", "Roboto Light", "Slate Light", "Segoe WP", NokiaPureTextLight, sans-serif;
+}
+
+.km-ios7 .km-view .ds-button .km-text
+{
+	color: inherit;
+}
+
+.km-ios7.km-horizontal .km-content input.ds-input {
+	padding: .3em .8em;
+}
+
+.km-phone .km-ios7.km-horizontal .km-button.ds-button,
+.km-phone .km-ios7.km-horizontal input.km-button.ds-button {
+	padding: 0 .4em .1em;
+}
+
+.km-ios7 .km-view .km-button.ds-button.ds-button-logout {
+    margin-top: 1em;
+    border-color: #93180f;
+    background-color: #cd2f23;
+}
+
+.km-ios7 .km-view .km-content .ds-button-decline
+{
+	background: none;
+	color: #F58220;
+	border-color: currentcolor;
+}
+
+.km-ios7 .km-view .ds-button.km-state-active
+{
+	box-shadow: inset 0 0 300px rgba(0,0,0,.2);
+}
+
+.km-ios7 .km-view .ds-button-decline.km-state-active
+{
+	box-shadow: inset 0 0 300px rgba(245,130,32,.2);
+}
+
+.km-ios7 .km-view .ds-button.ds-button-large {
+    width: 100%;
+}
+
+.km-ios7 .km-view .km-button.ds-button.ds-button-center {
+    text-align: center;
+}
+
+.km-ios7 .km-view .km-button.ds-button-regular {
+    border: 0 none;
+    background-color: transparent;
+    background-image: none;
+}
+
+.km-ios7 .km-view .km-button.ds-button-regular.km-state-active {
+    background-color: transparent;
+}
+
+.km-ios7 .km-view .km-footer .km-button.ds-button {
+    margin-bottom: 0;
+    font-size: 1.15em;
+}
+
+.km-ios7 .km-view .km-footer a.km-button.ds-button {
+    padding: .1em .8em;
+}
+
+.km-ios7 .km-view .km-footer .km-button.ds-button .ds-title {
+    float: left;
+}
+
+.km-ios7 .km-view.ar .km-footer .km-button.ds-button .ds-title {
+    float: right;
+}
+
+.km-ios7 .km-view .km-footer .km-button.ds-button .ds-cost {
+    float: right;
+}
+
+.km-ios7 .km-view.ar .km-footer .km-button.ds-button .ds-cost {
+    float: left;
+}
+
+.signin-view .ds-content-wrp,
+.signup-view .ds-content-wrp,
+.settings-view .ds-content-wrp {
+    background: #1976D2 url("images/background-main.png") no-repeat 50% 2em;
+    background-size: auto 40%;
+}
+
+.km-phone .km-horizontal .ds-content-wrp {
+	background-position: 50% 1em;
+}
+
+.signin-view h1,
+.settings-view h1 {
+    font-size: 2.35em;
+}
+
+.signin-view .ds-form {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.km-tablet .km-ios7 .signin-view .ds-form .ds-input-wrp,
+.km-tablet .km-ios7 .signin-view .ds-form .km-button.ds-button,
+.km-tablet .km-ios7 .signup-view .ds-form .ds-input-wrp,
+.km-tablet .km-ios7 .signup-view .ds-form .km-button.ds-button {
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+
+.km-tablet .km-ios7.km-horizontal .signin-view .ds-form .ds-input-wrp,
+.km-tablet .km-ios7.km-horizontal .signin-view .ds-form .km-button.ds-button,
+.km-tablet .km-ios7.km-horizontal .signup-view .ds-form .ds-input-wrp,
+.km-tablet .km-ios7.km-horizontal .signup-view .ds-form .km-button.ds-button {
+    width: 50%;
+}
+
+.km-ios7 .km-view.signin-view .ds-form p {
+    margin: 0;
+}
+
+.km-ios7.km-horizontal .signin-view .ds-form .ds-input-wrp {
+    display: inline-block;
+    width: 50%;
+}
+
+.km-ios7.km-horizontal .signin-view .ds-form .ds-input-wrp.ds-username {
+    margin-left: 0;
+}
+
+.km-ios7.km-horizontal .signin-view .ds-form .ds-input-wrp.ds-password {
+    margin-right: 0;
+}
+
+.km-ios7.km-horizontal .signin-view .ds-form .ds-button {
+    width: 50%;
+}
+
+.km-ios7.km-horizontal .signin-view .ds-form p.ds-center-text a,
+.km-tablet .km-ios7 .signin-view .ds-form p.ds-center-text a {
+    color: #000;
+    text-shadow: 0 0 2px #000;
+    font-weight: bold;
+}
+
+/* sign up view styles */
+.signup-view {
+    position: relative;
+}
+
+.signup-view > .km-content {
+    margin-top: -4em;
+}
+
+.signup-view .ds-form {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -9em;
+    height: 18em;
+}
+
+.km-phone .km-ios7.km-horizontal .signup-view .ds-form {
+    margin-top: -5em;
+    height: 11em;
+}
+
+.km-phone .km-ios7.km-horizontal .signup-view .ds-form .ds-input-wrp {
+    float: left;
+    width: 48.5%;
+}
+
+.km-phone .km-ios7.km-horizontal .signup-view .ds-form .ds-input-wrp.ds-username,
+.km-phone .km-ios7.km-horizontal .signup-view .ds-form .ds-input-wrp.ds-password {
+    margin-right: 1.5%;
+}
+
+.km-phone .km-ios7.km-horizontal .signup-view .ds-form .ds-input-wrp.ds-email,
+.km-phone .km-ios7.km-horizontal .signup-view .ds-form .ds-input-wrp.ds-retype-password {
+    margin-right: 0;
+    margin-left: 1.5%;
+}
+
+.km-ios7.km-horizontal .signup-view .ds-form .ds-button {
+    display: inline-block;
+    width: 50%;
+}
+
+.settings-view .ds-langs,
+.app-settings-view .ds-langs {
+    margin: 0;
+    padding: 0;
+}
+
+.settings-view .ds-langs {
+    position: absolute;
+    top: 50%;
+    right: .65em;
+    left: .65em;
+    margin-top: -1.65em;
+    height: 3.3em;
+}
+
+.km-phone .km-ios7.km-horizontal .app-settings-view .ds-langs,
+.km-tablet .km-ios7 .settings-view .ds-langs,
+.km-tablet .km-ios7 .app-settings-view .ds-langs {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.app-settings-view .ds-langs {
+    padding: 0 .65em;
+}
+
+.settings-view .ds-langs li,
+.app-settings-view .ds-langs li {
+    list-style-type: none;
+}
+
+.settings-view .ds-langs li {
+    float: left;
+    width: 48%;
+}
+
+.settings-view .ds-langs li:last-child {
+    float: right;
+}
+
+/* NavBar styles */
+.km-ios7 .km-header
+{
+	background: none;
+}
+
+.km-ios7 .km-navbar
+{
+	color: #fff;
+	background-color: rgba(25,118,210,.9);
+}
+
+.km-ios7 .km-view-title
+{
+	color: inherit;
+	text-align: left;
+	text-indent: 1em;
+	font-weight: normal;
+}
+
+.km-ios7 .km-navbar .km-button,
+.km-ios7 .km-navbar .km-state-active .km-text
+{
+	color: #F48120;
+}
+
+.km-ios7 .km-navbar .km-button.km-state-active 
+{
+	opacity: .8;
+}
+
+.km-ios7 .km-navbar .km-back
+{
+	color: inherit;
+	opacity: .7;
+	min-width: 1.8em;
+}
+
+.km-ios7 .km-leftitem
+{
+	left: 0;
+}
+
+.km-ios7 .ds-aligned
+{
+	text-indent: 2em;
+}
+
+.km-ios7 .km-back:before
+{
+	margin-left: .4em;
+}
+
+.km-ios7 .km-tabstrip .km-button
+{
+	padding: 1.5em 0;
+}
+
+.km-ios7 .km-tabstrip .km-icon
+{
+	display: none;
+}
+
+.km-ios7 .km-tabstrip .km-text
+{
+	font-size: 1.3em;
+}
+
+.km-ios7 .km-tabstrip .km-state-active .km-text
+{
+	font-weight: bold;
+	color: #000;
+}
+
+.km-ios7 .km-tabstrip .km-state-active
+{
+	box-shadow: inset 0 -2px #F6801A;
+}
+
+/* Detail box */
+.km-ios7 .km-view .km-content .ds-button-add:before
+{
+	content: "\a0";
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+}
+
+.km-ios7 .km-view .km-content .ds-button-add .km-icon,
+.km-ios7 .km-view .km-content .ds-button-add .km-text
+{
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.km-ios7 .km-view .km-content .ds-button-add .km-icon
+{
+	margin-top: -.3em;
+}
+
+.km-ios7.km-horizontal .km-content .ds-button-add .km-icon,
+.km-ios7.km-horizontal .km-content .ds-button-add .km-text
+{
+    margin-top: -.6em;
+}
+
+.km-ios7.km-horizontal .km-content .ds-button-add .km-icon
+{
+	margin-top: -.9em;
+}
+
+.km-ios7 .km-view .km-content .ds-button-add
+{
+	font-size: 1.5em;
+	border-radius: 0;
+	margin: 0;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: -2em;
+	bottom: -2em;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 70%, rgba(255,255,255,1) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1)));
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 70%,rgba(255,255,255,1) 100%);
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,0) 70%,rgba(255,255,255,1) 100%);
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0) 70%,rgba(255,255,255,1) 100%);
+	border-bottom: 0;
+    padding-bottom: 1em;
+}
+
+.km-ios7 .km-view .km-content .ds-button-approve,
+.km-ios7 .km-view .km-content .ds-button-decline
+{
+	width: 49%;
+}
+
+.km-ios7 .km-view .km-content .ds-button-large,
+.km-ios7 .km-view .km-content .ds-button-submit,
+.km-ios7 .km-view .km-content .ds-button-approve,
+.km-ios7 .km-view .km-content .ds-button-decline
+{
+	padding: .4em;
+}
+
+.ds-item-wrp
+{
+	display: block;
+	padding: .2em 0 .4em .4em;
+}
+
+.ds-item-wrp.ds-btn
+{
+	padding-right: .4em;
+}
+
+.ds-item-wrp .ds-title
+{
+	font-size: .9em;
+	color: #888;
+	display: block;
+	padding: .2em 0;
+	text-align: left;
+	border-bottom: 1px solid #eee;
+}
+
+.ds-item-wrp .ds-value
+{
+	display: block;
+	margin-right: .4em;
+	margin-top: .3em;
+}
+
+.ds-item-wrp span.ds-value
+{
+	color: #333;
+	font-weight: bold;
+}
+
+.ds-item-wrp span.ds-description
+{
+	font-weight: normal;
+}
+
+.ds-item-wrp span.ds-title-value
+{
+	font-size: 1.4em;
+	font-weight: normal;
+}
+
+.ds-status,
+.ds-description
+{
+	font-size: .9em;
+}
+
+.ds-detail-items .ds-item-wrp .ds-value:after
+{
+	content: "\a0";
+	width: 0;
+}
+
+.ds-item-wrp .ds-amount
+{
+	font-size: 1.2em;
+}
+
+.ds-item-wrp .ds-amount:before,
+.ds-item-content-wrp .ds-value:before
+{
+	content: "$ ";
+}
+
+.km-root .km-ios7 .km-view div.ds-value .ds-input
+{
+	-webkit-appearance: none;
+	border: 0;
+	width: 100%;
+	color: #333;
+	display: block;
+	padding: .4em .2em;
+	margin: 0;
+	background: #eee;
+	border-radius: 2px;
+	font-size: 1.1em;
+	resize: none;
+}
+
+.km-ios7 .ds-detail-container .km-button.ds-button
+{
+	font-size: 1.4em;
+	overflow: visible;
+	margin: .2em 0;
+}
+
+.km-ios7 .ds-detail-container .ds-button .ds-icon
+{
+	overflow: visible;
+}
+
+.ds-top-container 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+}
+
+.ds-detail-container 
+{
+	position: absolute;
+	max-height: 80%;
+	bottom: 1em;
+	left: 1em;
+	right: 1em;
+	border: 1px solid #eee;
+	box-shadow: 0 0 2em #aaa;
+	-webkit-box-shadow: 0 0 2em #aaa;
+	background: #fff;
+}
+
+.ds-item-content-wrp
+{
+    margin-left: 3.5em;
+    overflow: hidden;
+    display: block;
+}
+
+.ds-item-content-wrp .ds-title
+{
+    font-size: 1.1em;
+}
+
+.ds-item-content-wrp .ds-value
+{
+    display: block;
+}
+
+.ds-item-thumb
+{
+    background: transparent url("images/background-main.png") 50% 50% no-repeat;
+    height: 4.2em;
+    width: 4.2em;
+    position: absolute;
+    background-size: 130%;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+}

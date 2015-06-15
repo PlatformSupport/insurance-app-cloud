@@ -1,0 +1,20 @@
+<div id="signin-view"
+	 class="view signin-view"
+     data-role="view"
+     data-layout="default"
+     data-stretch="true"
+     data-transition="overlay:up"
+     data-show="app.loginService.signInViewModel.initData"
+     data-model="app.loginService.signInViewModel">
+    
+    <div class="ds-content-wrp">
+        <form class="ds-form" data-bind="events: { keyup: checkEnter }">
+            <label class="ds-input-wrp ds-icon ds-username"><input class="ds-input" type="text" data-bind="value: username" placeholder="Username"/></label>
+            <label class="ds-input-wrp ds-icon ds-password"><input class="ds-input ds-password" type="password" data-bind="value: password" placeholder="Password"/></label>
+            
+            <a class="ds-button ds-button-large" data-role="button" data-bind="click: onLogin">Login</a>
+			<a class="ds-button ds-button-large" data-role="button" href="scripts/modules/login/signup.html">Register</a>
+	    </form>
+    </div>
+    
+</div>

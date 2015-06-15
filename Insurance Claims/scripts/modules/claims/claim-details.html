@@ -1,0 +1,39 @@
+<div id="bill-details-view"
+     class="view bill-details-view"
+     data-role="view"
+	 data-stretch="true"
+     data-layout="drawer-layout"
+     data-transition="overlay:left"
+     data-init="app.claimDetailsService.initModule"
+     data-show="app.claimDetailsService.showModule"
+     data-model="app.claimDetailsService.viewModel">
+
+    <div data-role="header">
+        <div data-role="navbar">
+            <div data-role="view-title" data-bind="text: Title" class="ds-aligned"></div>
+            <a class="ds-header-button ds-header-back" data-align="left" data-role="backbutton"></a>
+        </div>
+    </div>
+
+    <div class="ds-detail-items">
+		<div class="ds-top-container">
+			<a class="ds-button ds-button-add" data-icon="camera" data-role="button" data-bind="click: onAddPhotoClick, invisible: Attachments">Add photo</a>
+        	<img class="ds-button-add" data-bind="visible: Attachments, attr: { src: PhotoUrl }"/> 
+		</div>
+		<div class="ds-detail-container" data-role="scroller">
+	        <span class="ds-item-wrp ds-item-right ds-item-has-icon"><span class="ds-title">Title</span><span class="ds-value ds-title-value" data-bind="text: Title"></span></span>
+	        <span class="ds-item-wrp ds-item-right ds-item-has-icon"><span class="ds-title">Policy</span><span class="ds-value ds-title-value" data-bind="text: Policy"></span></span>
+            <span class="ds-item-wrp"><span class="ds-title">Status</span><span class="ds-value ds-status" data-bind="text: Status, style: { color: StatusColor }"></span></span>
+	        <span class="ds-item-wrp"><span class="ds-title">Description</span><span class="ds-value ds-description" data-bind="text: Description"></span></span>
+	        <span class="ds-item-wrp"><span class="ds-title">Location</span><span class="ds-value ds-location" data-bind="text: Location"></span></span>
+	        <span class="ds-item-wrp"><span class="ds-title">Amount</span><span class="ds-value ds-amount" data-bind="text: Amount"></span></span>
+            <span class="ds-item-wrp ds-btn" data-bind="visible: isStatusRegistered">
+				<a class="ds-button ds-button-large ds-button-submit" data-icon="action" data-role="button" data-bind="click: onSubmitForApprovalClick">Submit for approval</a>
+            </span>
+            <span class="ds-item-wrp ds-btn" data-bind="visible: isAdmin">
+				<a class="ds-button ds-button-large ds-button-approve" data-icon="approve" data-role="button" data-bind="click: onApproveClick">Approve</a>
+            	<a class="ds-button ds-button-large ds-button-decline" data-icon="decline" data-role="button" data-bind="click: onDeclineClick">Decline</a>
+            </span>
+		</div>
+    </div>
+</div>

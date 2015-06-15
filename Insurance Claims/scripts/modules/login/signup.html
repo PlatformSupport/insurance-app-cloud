@@ -1,0 +1,19 @@
+<div id="signup-view" class="view signup-view" data-role="view" data-title="Register" data-layout="back-layout" data-reload="true" data-transition="fade" data-stretch="true" data-show="app.loginService.signUpViewModel.initData" data-model="app.loginService.signUpViewModel">
+	<div class="ds-content-wrp">
+		<form class="ds-form" data-bind="events: { keyup: checkEnter }">
+			<label class="ds-input-wrp ds-icon ds-username">
+				<input class="ds-input" type="text" data-bind="value: username" placeholder="Username" />
+			</label>
+			<label class="ds-input-wrp ds-icon ds-email">
+				<input class="ds-input" type="email" data-bind="value: email" placeholder="Email" />
+			</label>
+			<label class="ds-input-wrp ds-icon ds-password">
+				<input class="ds-input" type="password" data-bind="value: password" placeholder="Password" />
+			</label>
+			<label class="ds-input-wrp ds-icon ds-password ds-retype-password">
+				<input class="ds-input" type="password" data-bind="value: repassword" placeholder="Retype Password" />
+			</label>
+			<input class="ds-button ds-button-large" data-role="button" type="submit" data-bind="click: onSignUp" value="Sign Up" />
+		</form>
+	</div>
+</div>
