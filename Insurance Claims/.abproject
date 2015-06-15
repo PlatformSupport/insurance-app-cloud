@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Insurance Claims",
+  "ProjectGuid": "1779e002-6379-40b6-87eb-2f2fdc9a8ac3",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.InsuranceClaims",
+  "DisplayName": "Insurance Claims",
+  "Author": "",
+  "Description": "Insurance Claims",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{3b855a5f-95a7-4aa2-a848-2f21f238152f}",
+  "WP8ProductID": "{c8e188b7-122a-47f9-85ca-229d9d6bef52}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.InsuranceClaims",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
